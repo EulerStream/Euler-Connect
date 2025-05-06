@@ -1,0 +1,21 @@
+{
+  "extends": "@extension/tsconfig/base",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@src/*": [
+        "src/*"
+      ]
+    },
+    "types": [
+      "chrome",
+      "node",
+      "./vite-env.d.ts",
+      "./types/index.d.ts"
+    ]
+  },
+  "include": [
+    "src",
+    "vite.config.mts"
+  ]
+}
